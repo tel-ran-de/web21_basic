@@ -9,5 +9,6 @@ public class DefinitionDeclarationInitialization {
         int hexValue = 0x100;
         int binary = 0B1001_1001;
         int octal = 0757;
+
     }
 }
