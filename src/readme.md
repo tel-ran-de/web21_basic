@@ -52,3 +52,6 @@
     - MyFirst
     - Myfirst
     - myFirst
+13. markdown 
+14. Определение, объявление, инициализация переменных
+15. Definition, declaration, initialization 
