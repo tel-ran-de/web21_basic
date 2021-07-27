@@ -38,3 +38,8 @@
 9. императивное программирование, процедурное
 10. Rubber duck debugging
 11. Конкатенация
+12. case сенсетив. 
+    - myfirst
+    - MyFirst
+    - Myfirst
+    - myFirst
