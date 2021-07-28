@@ -1,6 +1,13 @@
 public class Circle {
     public static void main(String[] args) {
-        findCircumference();
+        //findCircumference();
+        findCircleArea();
+    }
+
+    public static void findCircleArea() {
+        int radius = 45;
+        double result = Math.PI * Math.pow(radius, 2);
+        System.out.println("Площадь круга : " + result);
     }
 
     public static void findCircumference() {
