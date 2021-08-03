@@ -2,7 +2,14 @@ public class HelloString {
     public static void main(String[] args) {
         //exampleOne();
         //helloString();
-        helloString2();
+        // helloString2();
+        helloString3();
+    }
+
+    public static void helloString3() {
+        String homework = "Домашнее задание ";
+        char indexNumberFive = homework.charAt(5);
+        System.out.println(indexNumberFive);
     }
 
     public static void helloString2() {
