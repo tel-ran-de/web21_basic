@@ -16,3 +16,4 @@ public class Exec {
         return number % 20 == 2 || number % 20 == 1;
     }
 }
+
