@@ -14,9 +14,13 @@ public class Bank {
             year--; //  year = year -1;
         }*/
         do {
-            result = result + result * interest / 100;
+            result = result + notSimpleGetPercent(result, interest);
             year--; //  year = year -1;
         } while (year > 0);
         return result;
+    }
+
+    private static double notSimpleGetPercent(double amount, double interest) {
+        return amount * interest / 100;
     }
 }
