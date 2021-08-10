@@ -1,0 +1,24 @@
+.div, .article {
+    font-style: italic;
+    font-size: 14px !important;
+}
+
+p {
+    color: blue;
+    font-size: 14px;
+}
+
+.root p {
+    color: blue;
+    font-size: 12px;
+}
+.mirror > p {
+    color: red;
+}
+.first ~ div {
+    border: 1px solid red;
+}
+
+.first + .box {
+    color: red;
+}

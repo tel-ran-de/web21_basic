@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {
+            font-weight: bold;
+        }
+        li {
+            font-style: italic;
+        }
+        /* ol li {
+            font-style: normal;
+        } */
+        #list-italic li { /* # - Для ID аттрибута тегов */
+            font-style: normal;
+        }
+        .list-nonitalic > li {
+            font-style: normal;
+        }
+        * {
+            color: red;
+        }
+
+        /*
+
+        .className - <tag class="className"></tag>
+        .className1.className2 - <tag class="className1 className2"></tag>
+        #idName - <tag id="idName"></tag>
+        p - <p></p>
+
+        p span - Все элементы span внутри p, не зависимо от вложенности
+        .className1 .className2
+
+        p > span - Все прямые потомки span внутри p
+        .className1 > .className2
+
+
+        */
+
+        ol ~ ul {
+
+        }
+    </style>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+
+    <h1>DRY - Don't repeat yourself</h1>
+
+
+    <!-- in-line styles -->
+    <p style="color:red; font-style: italic; text-decoration: underline; font-size:28px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos, similique.</p>
+
+    <!-- Стили через селекторы -->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, quisquam.</p>
+    <ul>
+        <li>List item1</li>
+        <li>List item2</li>
+        <li>List item3</li>
+    </ul>
+
+    <ol class="list-nonitalic">
+        <li>Item1</li>
+        <li>Item2</li>
+        <li>Item3</li>
+        <li>Item4</li>
+        <li>
+            <ul>
+                <li>Item1</li>
+                <li>Item2</li>
+                <li>Item3</li>
+            </ul>
+        </li>
+    </ol>
+
+    <ul class="list-nonitalic">
+        <li>Item1</li>
+        <li>Item2</li>
+        <li>Item3</li>
+        <li>Item4</li>
+        <li>Item5</li>
+    </ul>
+
+    <ul></ul>
+
+    <ul>
+        <li>
+            <ul></ul>
+        </li>
+    </ul>
+
+    <div class="div">
+        Lorem, ipsum dolor.
+    </div>
+    <div class="article">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus explicabo aut earum nulla vel eos itaque sunt quisquam dicta corporis temporibus id atque laborum molestiae, suscipit veniam ratione aperiam minima.
+    </div>
+
+</body>
+</html>
