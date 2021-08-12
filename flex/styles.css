@@ -1,0 +1,36 @@
+.container {
+    /* height: 1000px; */
+    border: 5px solid gray;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.col {
+    width: 10%;
+    font-size: 36px;
+    padding: 20px;
+    border: 2px solid red;
+}
+
+ .col-1 {
+    order:3;
+}
+
+
+.col-4 {
+    order: 1;
+}
+
+ .col-5 {
+    order: 2;
+}
+
+.col-3 {
+    align-self: center;
+}
+
+.col-rounded {
+    border-radius: 10px;
+}

@@ -1,0 +1,23 @@
+body {
+    /* background-color: darkgrey; */
+    color: white;
+    background-image: url(https://i.picsum.photos/id/1015/6000/4000.jpg?hmac=aHjb0fRa1t14DTIEBcoC12c5rAXOSwnVlaA5ujxPQ0I);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+div {
+    width: 50%;
+    margin: 100px auto 0;
+    height: 300px;
+    text-align: center;
+    padding-top: 200px;
+    /* background-color: #0000ff; */
+    /* background-color: blue; */
+    /* background-color: rgb(0, 0, 255); */
+    background-color: rgba(0,0,255, .25);
+    /* opacity: .75; */
+    font-size: 48px;
+    text-shadow: 3px 3px 3px black;
+    box-shadow: 10px 10px 10px red;
+}

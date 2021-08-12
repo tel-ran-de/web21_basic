@@ -1,0 +1,88 @@
+body {
+    margin: 80px 0 0;
+    padding: 0;
+}
+.navigate {
+    width: 100%;
+    background-color: #0000ff;
+    box-shadow: 0 3px 3px gray;
+    color: #ffffff;
+    font-size: 24px;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed; /* static - default, relative, absolute */ 
+    top: 0;
+    left: 0;
+}
+
+.blue {
+    width: 300px;
+    height: 300px;
+    border: 3px solid blue;
+    margin: 50px auto 0;
+    position: relative;
+}
+
+.red {
+    width: 100px;
+    height: 100px;
+    border: 3px solid red;
+    position: absolute;
+    top: 30%;
+    left: -30%;
+}
+
+.list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.list li {
+    margin-left: 30px;
+    position: relative;
+}
+
+.list li::after {
+    display: block;
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    top: 5px;
+    left: -15px;
+}
+
+.row {
+    border: 5px dotted blue;
+    height: 300px;
+    position: relative;
+}
+
+.col-1, .col-2, .col-3 {
+    width: 200px;
+    height: 250px;
+}
+
+.col-1 {
+    background-color: red;
+    position: absolute;
+    left: 10px;
+    top: 25px;
+}
+
+.col-2 {
+    background-color: blue;
+    position: absolute;
+    left: 240px;
+    top: 25px;
+}
+
+.col-3 {
+    background-color: yellow;
+    position: absolute;
+    left: 470px;
+    top: 25px;
+}

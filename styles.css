@@ -1,0 +1,29 @@
+* {
+    font-size: 28px;
+    line-height: 1.5;
+    font-family: 'Roboto', sans-serif;
+}
+
+p {
+    margin-bottom: 130px;
+    border: 1px solid red;
+    padding: 50px;
+    text-align: center;
+}
+
+span {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 36px;
+    text-decoration: underline;
+    color: red;
+    /* font-style: italic; */
+    /* margin: 100px; */
+    /* padding: 200px; */
+    border: 1px solid blue;
+    display: block;
+    font-weight: bold;
+}
+
+p img {
+    display: block;
+}
