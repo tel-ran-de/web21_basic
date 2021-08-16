@@ -1,0 +1,67 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+}
+
+.cards {
+    position: relative;
+}
+
+.cards-background {
+    height: 450px;
+    background-image: url(../bg-image.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.cards-wrapper {
+    width: 100%;
+    position: absolute;
+    bottom: -150px;
+    left: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    width: 250px;
+    color: #fff;
+    padding: 30px;
+}
+.card-number {
+    font-size: 38px;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.card-title {
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.card-description {
+    margin-bottom: 10px;
+}
+
+.card-gray {
+    background-color: #555c66;
+}
+
+.card-light-gray {
+    background-color: #858e99;
+}
+
+.card-blue {
+    background-color: #478ac9;
+}
+
+.card-light-blue {
+    background-color: #77aad9;
+}
