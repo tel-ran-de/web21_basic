@@ -3,9 +3,9 @@ package train;
 import java.util.Arrays;
 
 public class Train {
-    public String number;
+    private String number;
     public Wagon[] wagons;
-    public int wagonsCount;
+    private int wagonsCount;
 
     public Train(String number, int wagonsCount) {
         this.number = number;
@@ -13,12 +13,8 @@ public class Train {
         this.wagons = new Wagon[wagonsCount];
     }
 
-//    public void addWagon(Wagon w) {
-//
-//    }
 
-
-    public int getTotalSeats() {
+    private int getTotalSeats() {
         int sum = 0;
         for (Wagon w : wagons) {
             sum += w.getAllSeats();
@@ -26,7 +22,7 @@ public class Train {
         return sum;
     }
 
-    public double getTotalFullPrice() {
+    private double getTotalFullPrice() {
         int sum = 0;
         for (Wagon w : wagons) {
             sum += w.getFullPrice();
@@ -34,7 +30,7 @@ public class Train {
         return sum;
     }
 
-    public int getTotalFreeSeats() {
+    private int getTotalFreeSeats() {
         int sum = 0;
         for (Wagon w : wagons) {
             sum += w.getFreeSeats();
@@ -42,14 +38,13 @@ public class Train {
         return sum;
     }
 
-    public double getTotalFullSold() {
+    private double getTotalFullSold() {
         int sum = 0;
         for (Wagon w : wagons) {
             sum += w.getFullSold();
         }
         return sum;
     }
-
 
     public String getReport() {
         String report = "=====================\n";

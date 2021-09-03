@@ -22,6 +22,12 @@ public class App {
         bP.wagons[1] = new Wagon("2", c3, 100);
 
         System.out.println(bP.getReport());
+//
+//        Depo berlinMain = new Depo("Berlin");
+//        berlinMain.trains[0] = bD;
+//        berlinMain.trains[1] = bP;
+//
+//        System.out.println( berlinMain.trains[0] );
 
     }
 }
