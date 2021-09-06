@@ -52,7 +52,7 @@ public class Train {
         report += "Общее количество мест - " + this.getTotalSeats() + "\n";
         report += "Общая стоимость всех мест - " + this.getTotalFullPrice() + "\n";
         report += "Всего свободных мест - " + this.getTotalFreeSeats() + "\n";
-        report += "Всего получено в кассу вокзала - " + this.getTotalFullSold() + "\n";
+        report += "Всего получено в кассу вокзала - " + String.format("%.2f", this.getTotalFullSold()) + "\n";
         report += "=======================\n";
         return report;
     }
