@@ -5,10 +5,10 @@ public class ItemInShop {
     private int quantity;
     private int price;
 
-    public ItemInShop(Item item, int quantity) {
+    public ItemInShop(Item item, int quantity, int price) {
         this.item = item;
         this.quantity = quantity;
-        this.price = getNewPrice();
+        this.price = price;
     }
 
     public Item getItem() {
@@ -31,11 +31,7 @@ public class ItemInShop {
         this.price = price;
     }
 
-    private int getNewPrice() {
 
-
-        return this.price;
-    }
 
     @Override
     public String toString() {

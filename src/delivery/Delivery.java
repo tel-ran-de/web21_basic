@@ -54,6 +54,7 @@ public class Delivery {
 
     public void clearItems() {
         items.clear();
+        shop = null;
     }
 
 
@@ -66,12 +67,17 @@ public class Delivery {
 
     }
 
+    public double getDeliveryWeightCost() {
+        return (double) type.getCost() / type.getMaxWeight();
+    }
+
 
     @Override
     public String toString() {
+        String shopName = this.shop != null ? " Едем в " + this.shop.getName() + ", " : "";
         return "Delivery{" +
-                "shop=" + shop +
-                ", type=" + type +
+                shopName  +
+                "type=" + type +
                 ", items=" + items +
                 '}';
     }
