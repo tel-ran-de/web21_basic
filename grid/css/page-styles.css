@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+}
+
+.l-header {
+    grid-area: my-header;
+}
+
+.l-nav {
+    grid-area: my-nav;
+}
+
+.l-main {
+    grid-area: my-main;
+}
+
+.l-aside {
+    grid-area: my-aside;
+}
+
+.l-section {
+    grid-area: my-section;
+}
+
+.l-footer {
+    grid-area: my-footer;
+}
+
+.box-init {
+    font-size: larger;
+    color: #fff;
+    background-color: #2196f3;
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.grid {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-areas:
+            "my-header my-header"
+            "my-nav my-nav"
+            "my-main my-aside"
+            "my-main my-section"
+            "my-footer my-footer";
+
+
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+@media screen and (min-width: 875px) {
+    .grid {
+        grid-template-areas:
+            "my-nav my-header my-header"
+            "my-nav my-main my-aside"
+            "my-nav my-main my-section"
+            "my-nav my-footer my-footer";
+    }
+}
